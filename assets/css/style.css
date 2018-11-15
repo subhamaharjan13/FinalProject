@@ -4016,6 +4016,7 @@ h6.h1 {
 .col-xs-9 {
   padding-top: 7.5px;
   padding-bottom: 7.5px;
+  width: 500px;
 }
 @media (max-width: 667px) {
   .dt-buttons {
