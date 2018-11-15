@@ -1541,10 +1541,12 @@ footer p {
 .stat-widget-one .stat-content {
   margin-left: 30px;
   margin-top: 7px;
+
 }
 .stat-widget-one .stat-text {
   font-size: 14px;
   color: #868e96;
+
 }
 .stat-widget-one .stat-digit {
   font-size: 24px;
@@ -1554,6 +1556,10 @@ footer p {
 ---------------------------*/
 .stat-widget-two {
   text-align: center;
+  width: 700px;
+  height: 400px;
+
+
 }
 .stat-widget-two .stat-digit {
   font-size: 1.75rem;
@@ -1810,7 +1816,7 @@ footer p {
     Responsive
 =================================================
 */
-@media (max-width: 768px) {
+@media (max-width: 736px) {
   .card {
     display: inline-block;
     width: 100%;
@@ -4016,7 +4022,8 @@ h6.h1 {
 .col-xs-9 {
   padding-top: 7.5px;
   padding-bottom: 7.5px;
-  width: 500px;
+
+
 }
 @media (max-width: 667px) {
   .dt-buttons {
