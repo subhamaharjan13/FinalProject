@@ -39,6 +39,24 @@
 
         <link href="assets/css/lib/helper.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+        .tik-tik {
+          padding: 30px 50px 30px 110px;
+        }
+        .tiktikclock {
+          padding-left: 170px;
+        }
+        .tiktikclock img {
+          margin-left: -16px;
+          width: 400px;
+          height: auto;
+        }
+        .form {
+          background-color: #343957;
+          color: #fff;
+        }
+        </style>
     </head>
 
     <body>
@@ -48,39 +66,24 @@
         <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
             <div class="nano">
                 <div class="nano-content">
-                    <div class="logo"><a href="index.html"><span><img src="assets/images/logo7.png" alt="" /></span><span>SpineLine</span></a></div>
+                    <!-- <div class="logo"><a href="index.html"><span><img src="assets/images/logo7.png" alt="" /></span><span>SpineLine</span></a></div> -->
                     <ul>
                         <li class="label">Home</li>
-                        <li class="active"><a class="sidebar-sub-toggle"><i class="ti-home"></i> Dashboard </span></a>
-                            <!-- <ul>
-                                <li><a href="index.html">Dashboard 1</a></li>
-                                <li><a href="index1.html">Dashboard 2</a></li>
-
-
-
-                            </ul> -->
-                        </li>
+                        <li><a href="index.html"><i class="ti-home"></i> Dashboard</a></li>
 
                         <li class="label">Features</li>
                           <!-- <a href="app-event-calender.html"> -->
                           <!--<a href="app-email.html"> -->
                         <li><a href="reminder1.html"><i class="ti-calendar"></i> Reminder </a></li>
-                        <li><a href="popups.html"><i class="ti-email"></i> Pop-up </a></li>
-                        <li><a href="app-profile.html"><i class="ti-apple"></i> Food </a></li>
+                        <li class="active"><a href="popups.html"><i class="ti-email"></i> Pop-up </a></li>
+                        <li><a href="food.html"><i class="ti-apple"></i> Food </a></li>
 
-                        <li><a class="sidebar-sub-toggle"><i class="ti-user"></i>  Fitness  <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="chart-flot.html">Exercise</a></li>
-                                <li><a href="chart-morris.html">Yoga</a></li>
-                            </ul>
+                        <li><a href="fitness.html"><i class="ti-user"></i>  Fitness  </span></a>
+
                         </li>
 
-                        <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>  Informations  <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="chart-flot.html">Types</a></li>
-                                <li><a href="chart-morris.html">Causes</a></li>
-                                <li><a href="chartjs.html">Tips</a></li>
-                            </ul>
+                        <li><a href="information.html"><i class="ti-bar-chart-alt"></i>  Informations  </span></a>
+
                         </li>
                 </div>
             </div>
@@ -94,9 +97,7 @@
                     <div class="col-lg-12">
                         <div class="float-left">
                             <div class="hamburger">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
+                                <img src="logo/logo4a.png">
                             </div>
                         </div>
                         <div class="float-right">
@@ -174,44 +175,12 @@
                                                 </div>
                                             </a>
                                                 </li>
-                                                <li class="notification-unread">
-                                                    <a href="#">
-                                                <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/2.jpg" alt="" />
-                                                <div class="notification-content">
-                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                    <div class="notification-heading">Mr. John</div>
-                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                </div>
-                                            </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
-                                                <div class="notification-content">
-                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                    <div class="notification-heading">Michael Qin</div>
-                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                </div>
-                                            </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/2.jpg" alt="" />
-                                                <div class="notification-content">
-                                                    <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                    <div class="notification-heading">Mr. John</div>
-                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                </div>
-                                            </a>
-                                                </li>
-                                                <li class="text-center">
-                                                    <a href="#" class="more-link">See All</a>
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="header-icon dib"><span class="user-avatar">John <i class="ti-angle-down f-s-10"></i></span>
+                                <li class="header-icon dib"><span class="user-avatar">User <i class="ti-angle-down f-s-10"></i></span>
                                     <div class="drop-down dropdown-profile">
                                         <div class="dropdown-content-heading">
                                             <span class="text-left">Upgrade Now</span>
@@ -241,14 +210,62 @@
         <div class="content-wrap">
             <div class="main">
                 <div class="container-fluid">
+                  <div class="tik-tik">
+                    <div class="row tiktikclock">
+                      <div class="col-lg-7">
+                          <div class="card form">
+                              <div class="card-body">
+                                  <img class="content-img main-pic" src="img/sitstand.gif">
+                              </div>
+                          </div>
+                      </div>
+                    </div>
                     <div class="row">
-                        <div class="col-lg-8 p-r-0 title-margin-right">
+                      <div class="col-lg-5">
+                          <div class="card form">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: #fff;">Check your posture</h4><br>
+                                  <input type="datetime-local" id="alarmTime" name="alarmTime"/>
+                                  <button onclick="setAlarm(this)" id="alarmButton">Set PopUp</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-5">
+                          <div class="card form">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: #fff;">Change your posture</h4><br>
+                                  <input type="datetime-local" id="alarmTime" name="alarmTime"/>
+                                  <button onclick="setAlarm(this)" id="alarmButton">Set PopUp</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-5">
+                          <div class="card form">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: #fff;">Take a walk</h4><br>
+                                  <input type="datetime-local" id="alarmTime" name="alarmTime"/>
+                                  <button onclick="setAlarm(this)" id="alarmButton">Set PopUp</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-5">
+                          <div class="card form">
+                              <div class="card-body">
+                                  <h4 class="card-title" style="color: #fff;">Relax your neck and back</h4><br>
+                                  <input type="datetime-local" id="alarmTime" name="alarmTime"/>
+                                  <button onclick="setAlarm(this)" id="alarmButton">Set PopUp</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
 
-                        </div>
-
-
-
-
+              <div id="alarmOptions" style="display: none">
+                <button onclick="snooze();">Snooze 10 minutes</button>
+                <button onclick="stopAlarm();">Ok, Done!</button>
+              </div>
+              </div>
                 </div>
             </div>
         </div>
@@ -329,39 +346,11 @@
         <script src="assets/js/scripts.js"></script>
         <!-- scripit init-->
 
-        <div>
-    Check your posture<br>
-    <input type="datetime-local" id="alarmTime" name="alarmTime"/>
-    <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
-  </div><br>
 
-
-  <div>
-    Change your posture<br>
-    <input type="datetime-local" id="alarmTime" name="alarmTime"/>
-    <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
-  </div><br>
-
-   <div>
-    Take a walk<br>
-    <input type="datetime-local" id="alarmTime" name="alarmTime"/>
-    <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
-  </div><br>
-
-   <div>
-    Relax your neck and back<br>
-    <input type="datetime-local" id="alarmTime" name="alarmTime"/>
-    <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
-  </div><br>
-
-  <div id="alarmOptions" style="display: none">
-    <button onclick="snooze();">Snooze 10 minutes</button>
-    <button onclick="stopAlarm();">Ok, Done!</button>
-  </div>
 
   <script>
     var alarmSound = new Audio();
-    alarmSound.src = 'alarm.mp3';
+    alarmSound.src = 'popup.mp3';
 
     function setAlarm(button){
       var ms = document.getElementById('alarmTime').valueAsNumber;
@@ -380,13 +369,13 @@
 
       setTimeout(initAlarm, differenceInMs);
 
-      button.innerText = 'Cancel Alarm';
+      button.innerText = 'Cancel PopUp';
       button.setAttribute('onclick', 'cancelAlarm(this);');
 
     };
 
     function cancelAlarm(button){
-      button.innerText = 'Set Alarm';
+      button.innerText = 'Set PopUp';
       button.setAttribute(onclick, 'setAlarm(this);');
     }
 

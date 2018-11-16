@@ -69,6 +69,9 @@
 ------------------*/
 /*    Brand color
 ----------------------*/
+body {
+  overflow-x: hidden;
+}
 /*----------------font-------------------*/
 .icon-name {
   color: #000;
@@ -705,6 +708,9 @@ a.dt-button.active:not(.disabled) {
   margin-left: 250px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: margin-left 300ms ease-in-out 0s;
+}
+.header .hamburger {
+  margin-top: -21px;
 }
 .logo {
   background: #343957;
@@ -2775,6 +2781,11 @@ tbody tr td:last-child {
 .search-type .form-control {
   height: 30px;
 }
+section .main-pic {
+  width: auto;
+  height: 330px;
+}
+
 @media (max-width: 1199px) {
   .search-action {
     text-align: center;

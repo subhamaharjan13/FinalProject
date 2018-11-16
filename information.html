@@ -41,46 +41,39 @@
         <link href="assets/css/style.css" rel="stylesheet">
 
         <style>
-          .tik-tik {
-            padding: 30px 50px 30px 100px;
-          }
-          .tiktikclock {
-            padding-left: 170px;
-          }
-          .tiktikclock img {
-            margin-left: -10px;
-          }
-          .form {
-            background-color: #343957;
-            color: #fff;
-          }
+        .tik-tik {
+          padding: 30px 50px 30px 110px;
+        }
+        /* .form {
+          background-color: #343957;
+          color: #fff;
+        } */
         </style>
-
-
     </head>
+
     <body>
+
+
+
         <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
             <div class="nano">
                 <div class="nano-content">
                     <!-- <div class="logo"><a href="index.html"><span><img src="assets/images/logo7.png" alt="" /></span><span>SpineLine</span></a></div> -->
                     <ul>
                         <li class="label">Home</li>
-                        <li><a href="index.html"><i class="ti-home"></i> Dashboard </span></a>
-                        </li>
+                        <li><a href="index.html"><i class="ti-home"></i> Dashboard</a></li>
 
                         <li class="label">Features</li>
                           <!-- <a href="app-event-calender.html"> -->
                           <!--<a href="app-email.html"> -->
-                        <li class="active"><a href="reminder1.html"><i class="ti-calendar"></i> Reminder </a></li>
+                        <li><a href="reminder1.html"><i class="ti-calendar"></i> Reminder </a></li>
                         <li><a href="popups.html"><i class="ti-email"></i> Pop-up </a></li>
                         <li><a href="food.html"><i class="ti-apple"></i> Food </a></li>
 
-                        <li><a href="fitness.html"><i class="ti-user"></i>  Fitness </a>
-
+                        <li><a href="fitness.html"><i class="ti-user"></i>  Fitness  </a>
                         </li>
 
-                        <li><a href="information.html"><i class="ti-bar-chart-alt"></i>  Informations  </a>
-
+                        <li class="active"><a href="information.html"><i class="ti-bar-chart-alt"></i>  Informations  </a>
                         </li>
                 </div>
             </div>
@@ -207,42 +200,78 @@
         <div class="content-wrap">
             <div class="main">
                 <div class="container-fluid">
-                  <div class="tik-tik">
-                    <div class="row tiktikclock">
-                      <div class="col-lg-7">
-                          <div class="card form">
-                              <div class="card-body">
-                                  <img class="content-img main-pic" src="img/alarmclock.gif">
-                              </div>
-                          </div>
+                  <div class="row">
+                      <div class="col-lg-12 p-r-0 title-margin-right">
+                        <h1 style="font-size: 32px; font-weight: 300; text-align: center;">Back pain is a common reason for absence from work and for seeking medical treatment. It can be uncomfortable and debilitating.</h1>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-5">
-                          <div class="card form">
-                              <div class="card-body">
-                                  <h4 class="card-title" style="color: #fff;">Yoga & Fitness Reminder</h4><br>
-                                  <input type="datetime-local" id="alarmTime" name="alarmTime"/>
-                                  <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
-                              </div>
-                          </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Causes</h4>
+                            <p><br>The human back is composed of a complex structure of muscles, ligaments, tendons, disks, and bones, which work together to support the body and enable us to move around.</p>
+
+<p>The segments of the spine are cushioned with cartilage-like pads called disks.</p>
+
+<p>Problems with any of these components can lead to back pain. In some cases of back pain, its cause remains unclear.</p>
+
+<p>Damage can result from strain, medical conditions, and poor posture, among others.</p>
+                        </div>
                       </div>
-                      <div class="col-lg-5">
-                          <div class="card form">
-                              <div class="card-body">
-                                  <h4 class="card-title" style="color: #fff;">Food & Nutrition Reminder</h4><br>
-                                  <input type="datetime-local" id="alarmTime" name="alarmTime"/>
-                                  <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                                <div id="alarmOptions" style="display: none">
-                                  <button onclick="snooze();">Snooze 10 minutes</button>
-                                  <button onclick="stopAlarm();">Ok, Done!</button>
-                                </div>
                   </div>
+                  <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Movement and posture</h4>
+                            <p><br>Back pain can also result from some everyday activities or poor posture.<br>
+                            Examples include:<br>
+                              twisting<br>
+                              coughing or sneezing<br>
+                              over-stretching<br>
+                              pushing, pulling, lifting, or carrying something<br>
+                              standing or sitting for long periods<br>
+                              straining the neck forward, such as when driving or using a computer<br>
+                              long driving sessions without a break, even when not hunched<br>
+                              sleeping on a mattress that does not support the body and keep the spine straight<br>
+                            </p>
+                        </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Risk factors</h4>
+                            <p><br>The following factors are linked to a higher risk of developing low back pain:<br>
+occupational activities<br>
+pregnancy<br>
+a sedentary lifestyle<br>
+poor physical fitness<br>
+older age<br>
+obesity and excess weight<br>
+smoking<br>
+strenuous physical exercise or work, especially if done incorrectly<br>
+genetic factors<br>
+medical conditions, such as arthritis and cancer<br>
+Lower back pain also tends to be more common in women than in men, possibly due to hormonal factors. Stress, anxiety, and mood disorders have also been linked to back pain.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Home treatments</h4>
+                            <p><br>Over-the-counter (OTC) pain relief medication, usually nonsteroidal anti-inflammatory drugs (NSAID), such as ibuprofen, can relieve discomfort. Applying a hot compress or an ice pack to the painful area may also reduce pain.<br>
+
+Resting from strenuous activity can help, but moving around will ease stiffness, reduce pain, and prevent muscles from weakening.
+                            </p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              </div>
             </div>
+          </div>
         </div>
 
 
@@ -319,57 +348,7 @@
         <script src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
         <script src="assets/js/lib/owl-carousel/owl.carousel-init.js"></script>
         <script src="assets/js/scripts.js"></script>
-
-
-
-
-              <script>
-                var alarmSound = new Audio();
-                alarmSound.src = 'alarm.mp3';
-
-                function setAlarm(button){
-                  var ms = document.getElementById('alarmTime').valueAsNumber;
-                  if(isNaN(ms)) {
-                    alert('Invalid Date');
-                    return;
-                  }
-                  var alarm = new Date(ms);
-                  var alarmTime = new Date(alarm.getUTCFullYear(), alarm.getUTCMonth(), alarm.getUTCDate(), alarm.getUTCHours(), alarm.getUTCMinutes(), alarm.getUTCSeconds());
-                  var differenceInMs = alarmTime.getTime() - (new Date()).getTime();
-
-                  if(differenceInMs < 0){
-                    alert('Specified time is already passed');
-                    return;
-                  }
-
-                  setTimeout(initAlarm, differenceInMs);
-
-                  button.innerText = 'Cancel Alarm';
-                  button.setAttribute('onclick', 'cancelAlarm(this);');
-
-                };
-
-                function cancelAlarm(button){
-                  button.innerText = 'Set Alarm';
-                  button.setAttribute(onclick, 'setAlarm(this);');
-                }
-
-                function initAlarm(){
-                  alarmSound.play();
-                  document.getElementById('alarmOptions').style.display = '';
-                }
-
-                function stopAlarm(){
-                  alarmSound.pause();
-                  alarmSound.currentTime = 0;
-                  document.getElementById('alarmOptions').style.display = 'none';
-                };
-
-                function snooze(){
-                  stopAlarm();
-                  setTimeout(initAlarm, 720000);
-                }
-              </script>
+        <!-- scripit init-->
 
 
     </body>
