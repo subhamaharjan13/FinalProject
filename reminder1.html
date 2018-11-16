@@ -40,13 +40,13 @@
         <link href="assets/css/lib/helper.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
-
     <body>
+    <!-- <body>
       <div id="splash" class="splash">
           <img class="splashimg" src="img/spinegiphy.gif">
 	         <h1>SpineLine</h1>
 	          <h2>We've got your Back</h2>
-      </div>
+      </div> -->
 
 
         <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
@@ -267,19 +267,19 @@
 
                     </div> -->
                     <!-- /# row -->
-                    <section>
-                        <div class="row">
+                    <!-- <section>
+                        <div class="row"> -->
                             <!-- column -->
-                            <div class="col-lg-6">
+                            <!-- <div class="col-lg-6">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title"></h4>
                                         <img class="content-img" src="img/mainpic.gif">
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- column -->
-                            <div class="col-md-6">
+                            <!-- <div class="col-md-6">
                                 <div class="card text-center">
                                     <div class="m-t-10">
                                         <p>Test text</p>
@@ -287,7 +287,7 @@
                                     <p>lorem dasdsa ds dsa dksaj kdksaj ksajd ksajd ksa jdk ksa dkasjkddsa dsa dsad asd sad asd sad sad asd asd sad asd sad asdasd sadsadsad sadsa d sda sad sad asd asd sa dj sadjksaj kdsaj kdjsak dskd sakdjsa jdksa jkdsaj kak j djsakd asksa dksd jkjj dsk dsjjkds sjdk dsjk sdjk ksadjk s ajdkd jk ajdk adjsk</p>
                             </div>
 
-                    </section>
+                    </section> -->
 
 
                 </div>
@@ -387,7 +387,7 @@
         <!-- scripit init-->
 
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             (function() {
                 var splash = document.getElementById("splash");
                 var loading = 0;
@@ -405,9 +405,72 @@
               }
               }
               })();
+              </script> -->
+
+              <div>
+                Yoga & Fitness Reminder<br>
+                <input type="datetime-local" id="alarmTime" name="alarmTime"/>
+                <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
+              </div><br>
+
+
+              <div>
+                Food & Nutrition Reminder<br>
+                <input type="datetime-local" id="alarmTime" name="alarmTime"/>
+                <button onclick="setAlarm(this)" id="alarmButton">Set Alarm</button>
+              </div><br>
+              <div id="alarmOptions" style="display: none">
+                <button onclick="snooze();">Snooze 10 minutes</button>
+                <button onclick="stopAlarm();">Ok, Done!</button>
+              </div>
+
+              <script>
+                var alarmSound = new Audio();
+                alarmSound.src = 'alarm.mp3';
+
+                function setAlarm(button){
+                  var ms = document.getElementById('alarmTime').valueAsNumber;
+                  if(isNaN(ms)) {
+                    alert('Invalid Date');
+                    return;
+                  }
+                  var alarm = new Date(ms);
+                  var alarmTime = new Date(alarm.getUTCFullYear(), alarm.getUTCMonth(), alarm.getUTCDate(), alarm.getUTCHours(), alarm.getUTCMinutes(), alarm.getUTCSeconds());
+                  var differenceInMs = alarmTime.getTime() - (new Date()).getTime();
+
+                  if(differenceInMs < 0){
+                    alert('Specified time is already passed');
+                    return;
+                  }
+
+                  setTimeout(initAlarm, differenceInMs);
+
+                  button.innerText = 'Cancel Alarm';
+                  button.setAttribute('onclick', 'cancelAlarm(this);');
+
+                };
+
+                function cancelAlarm(button){
+                  button.innerText = 'Set Alarm';
+                  button.setAttribute(onclick, 'setAlarm(this);');
+                }
+
+                function initAlarm(){
+                  alarmSound.play();
+                  document.getElementById('alarmOptions').style.display = '';
+                }
+
+                function stopAlarm(){
+                  alarmSound.pause();
+                  alarmSound.currentTime = 0;
+                  document.getElementById('alarmOptions').style.display = 'none';
+                };
+
+                function snooze(){
+                  stopAlarm();
+                  setTimeout(initAlarm, 720000);
+                }
               </script>
-
-
 
 
     </body>

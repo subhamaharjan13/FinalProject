@@ -4,6 +4,10 @@ const url = require('url');
 let $ = require('jquery');
 // mainWindow.$ = $;
 
+const
+  { noti } = require('electron'),
+  Notification = require('electron-native-notification');
+
 let win;
 
 function createWindow(){
@@ -32,3 +36,35 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
+
+//run notification
+
+//Notification.requestPermission();
+
+// noti.on('ready', () => {
+//
+//   const opt = { body: 'See? Really easy to use!' };
+//
+//   const notification = new Notification('I am a notification!', opt);
+//
+//   notification.on('show', () => {
+//     console.log('I\'m coming~');
+//   });
+//
+//   notification.onclick = () => {
+//     console.log('On no! You touch me. It\'s hurt!!');
+//   };
+//
+//   notification.addEventListener('close', () => {
+//     console.log('I\'ll be back!!');
+//   });
+//
+//   notification.addListener('error', (err) => {
+//     console.error(err);
+//   });
+//
+//   console.log('What does the notification say? ' + notification.body);
+//
+//   setTimeout(() => notification.close(), 2000);
+//
+// });
